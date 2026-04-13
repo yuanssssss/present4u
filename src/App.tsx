@@ -6,7 +6,7 @@ const videoSrc = '/video/skystar.mp4';
 
 const App: React.FC = () => {
   const [showPresent, setShowPresent] = useState<boolean>(false);
-  const myInterval = useRef<NodeJS.Timeout | null>(null);
+  const myInterval = useRef<ReturnType<typeof setInterval> | null>(null);
   const [count, setCount] = useState<number>(3);
   const [showTime, setShowTime] = useState<boolean>(false);
   const [userName, setUserName] = useState<string>('');
